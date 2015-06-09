@@ -1,0 +1,78 @@
+Key (c) inserted 
+[ Height of Tree : 1 ] c   
+
+Key (s) inserted 
+[ Height of Tree : 1 ] c s   
+
+Key (d) inserted 
+[ Height of Tree : 2 ] c d s   
+
+Key (t) inserted 
+[ Height of Tree : 2 ] c d s t   
+
+Key (a) inserted 
+[ Height of Tree : 2 ] a c d s t   
+
+Key (m) inserted 
+[ Height of Tree : 2 ] a c d m s t   
+
+Key (p) inserted 
+[ Height of Tree : 2 ] a c d m p s t   
+
+Key (i) inserted 
+[ Height of Tree : 3 ] a c d i m p s t   
+
+Key (b) inserted 
+[ Height of Tree : 3 ] a b c d i m p s t   
+
+Key (w) inserted 
+[ Height of Tree : 3 ] a b c d i m p s t w   
+
+Key (n) inserted 
+[ Height of Tree : 3 ] a b c d i m n p s t w   
+
+Key (g) inserted 
+[ Height of Tree : 3 ] a b c d g i m n p s t w   
+
+Key (u) inserted 
+[ Height of Tree : 3 ] a b c d g i m n p s t u w   
+
+Key (r) inserted 
+[ Height of Tree : 3 ] a b c d g i m n p r s t u w   
+
+Key (k) inserted 
+[ Height of Tree : 4 ] a b c d g i k m n p r s t u w   
+
+Key (e) inserted 
+[ Height of Tree : 4 ] a b c d e g i k m n p r s t u w   
+
+Key (h) inserted 
+[ Height of Tree : 4 ] a b c d e g h i k m n p r s t u w   
+
+Key (o) inserted 
+[ Height of Tree : 4 ] a b c d e g h i k m n o p r s t u w   
+
+Key (l) inserted 
+[ Height of Tree : 4 ] a b c d e g h i k l m n o p r s t u w   
+
+Key (j) inserted 
+[ Height of Tree : 4 ] a b c d e g h i j k l m n o p r s t u w   
+
+Key (y) inserted 
+[ Height of Tree : 4 ] a b c d e g h i j k l m n o p r s t u w y   
+
+Key (q) inserted 
+[ Height of Tree : 4 ] a b c d e g h i j k l m n o p q r s t u w y   
+
+Key (z) inserted 
+[ Height of Tree : 4 ] a b c d e g h i j k l m n o p q r s t u w y z   
+
+Key (f) inserted 
+[ Height of Tree : 4 ] a b c d e f g h i j k l m n o p q r s t u w y z   
+
+Key (x) inserted 
+[ Height of Tree : 4 ] a b c d e f g h i j k l m n o p q r s t u w x y z   
+
+Key (v) inserted 
+[ Height of Tree : 4 ] a b c d e f g h i j k l m n o p q r s t u v w x y z   
+

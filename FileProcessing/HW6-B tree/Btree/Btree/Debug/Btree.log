@@ -1,0 +1,17 @@
+﻿빌드 시작: 2015-05-20 오후 11:52:22
+     1>2 노드의 "E:\M\Kookm\3-1\화일처리\report\HW6-B tree\Btree\Btree\Btree.vcxproj" 프로젝트(Build 대상)입니다.
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\M\Kookm\3-1\화일처리\report\HW6-B tree\Btree\Debug\Btree.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\M\Kookm\3-1\화일처리\report\HW6-B tree\Btree\Debug\Btree.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\M\Kookm\3-1\화일처리\report\HW6-B tree\Btree\Debug\Btree.lib" /MACHINE:X86 Debug\btree.obj
+         Debug\main.obj
+     1>main.obj : error LNK2005: _CreateNode이(가) btree.obj에 이미 정의되어 있습니다.
+     1>main.obj : error LNK2005: _CreateOverflowNode이(가) btree.obj에 이미 정의되어 있습니다.
+     1>main.obj : error LNK2005: _CreateStackNode이(가) btree.obj에 이미 정의되어 있습니다.
+     1>main.obj : error LNK2005: _PeepStackTop이(가) btree.obj에 이미 정의되어 있습니다.
+     1>main.obj : error LNK2005: _PopFromStack이(가) btree.obj에 이미 정의되어 있습니다.
+     1>main.obj : error LNK2005: _PushlntoStack이(가) btree.obj에 이미 정의되어 있습니다.
+     1>E:\M\Kookm\3-1\화일처리\report\HW6-B tree\Btree\Debug\Btree.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
+     1>"E:\M\Kookm\3-1\화일처리\report\HW6-B tree\Btree\Btree\Btree.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.28

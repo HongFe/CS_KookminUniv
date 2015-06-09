@@ -1,0 +1,1 @@
+﻿서울에서 대전에 갈 때 <DATE>2004년 5월 10일</DATE>에 출발하는 기차는 아침 <TIME>9시 30분</TIME>부터 밤 <TIME>12시 30분</TIME>까지 운행한다. 기차가 출발하기 전에 음료수 <QUANTITY>2병</QUANTITY>과 빵 <QUANTITY>5개</QUANTITY>를 준비했다. 
