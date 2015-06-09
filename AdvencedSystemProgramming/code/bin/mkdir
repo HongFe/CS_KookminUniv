@@ -1,0 +1,39 @@
+#!/usr/bin/python
+
+import sys
+import re
+import os
+
+def MKDIR (arg):
+	pMode = 0755 # Basic Permission Mode
+	pFlag = 0	
+	dirName = arg[1:] # Directory Names
+
+	# Option
+	if arg[1][0] == '-' :
+		dirName = arg[2:] # Directory Names except Option
+		# mode option
+		if bool(re.search('m',arg[1])) :
+			try:
+				if int(arg[2]) >= 0: # if intager
+					pMode = int(arg[2],8)	# input Permission mode
+					dirName = arg[3:] # File Names except Num
+			except:
+				print "[ERROR] Wrong permission"
+				sys.exit()
+		# parent option
+		if bool(re.search('p',arg[1])):
+			pFlag = 1
+
+	for n in dirName :
+		if not os.path.isdir(n) :				
+			if pFlag :
+				os.makedirs(n,pMode) # Make Parents Dir
+			else : 
+				os.mkdir(n,pMode)
+		else:
+			print "[ERROR] cannot create directory \'" + n + "\': File exists"
+
+
+MKDIR(sys.argv)
+

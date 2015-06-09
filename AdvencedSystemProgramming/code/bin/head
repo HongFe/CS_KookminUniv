@@ -1,0 +1,91 @@
+#!/usr/bin/python
+
+import sys
+import re
+import os
+
+
+def HEAD (arg,argc):
+	begin = 0 # Head Command / Begin Point
+	fileName = arg[1:]
+	nFlag = 0 # Option : including file 'name Flag'
+	lFlag = 0 # OPtion : limit num of 'line Flag'
+	redir = 0 # redirection
+	
+	if argc > 1:
+		# Option
+		if arg[1][0] == '-' :
+			fileName = arg[2:] # File Names except Option
+			# verbose option
+			if bool(re.search('v',arg[1])) :
+				nFlag = 1			
+			# quite option
+			if bool(re.search('q',arg[1])) :
+				nFlag = 0
+			# lines option
+			if bool(re.search('n',arg[1])) :
+				try:
+					if int(arg[2]) >= 0:
+						lFlag = 1
+						limitLines = int(arg[2])
+						fileName = arg[3:]  #File Names except Num	
+						if argc == 3:
+							redir=1				
+				except:
+					print "[ERROR] Wrong number of lines"
+					sys.exit()	
+
+			# No input file -> standard in
+			if argc == 2 and ~lFlag:
+				redir=1
+	else :
+		redir=1
+	
+
+	# redirection
+	if redir :
+		line = sys.stdin.readlines()
+		try:
+			# End point of printing
+			if lFlag :
+				end=limitLines
+			else : 
+				end=len(line)	
+						
+			# File Name
+			if nFlag :
+				print "==> Standard Input <=="		
+					
+			for i in  range(begin,end):			
+				print re.sub("\n","",line[i]) # '\n' Delete line 
+
+		except :					
+			print "head : cannot open standard in!\n"
+			
+	# input files
+	else :
+		for n in fileName :
+			try:
+				if os.path.exists(n) :
+					fr = open(n, 'r')	
+					line = fr.readlines()
+
+				# End point of printing
+				if lFlag :
+					end=limitLines
+				else : 
+					end=len(line)	
+						
+				# File Name
+				if nFlag :
+					print "==> "+n+" <=="		
+			
+				for i in  range(begin,end):			
+					print re.sub("\n","",line[i]) # '\n' Delete line 
+
+
+			except :					
+				print "[ERROR] cannot open \'" + n + "\' for reading: No such file or directory!\n"
+
+HEAD(sys.argv,len(sys.argv))
+		
